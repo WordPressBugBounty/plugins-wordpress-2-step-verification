@@ -1,0 +1,252 @@
+[v-cloak], template, .hidden {
+  display: none !important;
+}
+p{
+  max-width: 100%;
+  margin: 0.7em 0;
+}
+h2{
+  margin-bottom:5px;
+  +p{
+    margin-top: 0;
+  }
+}
+.mt{
+  margin-top:16px;
+}
+.mb{
+  margin-bottom: 16px;
+}
+.show-if-print{
+  display: none;
+}
+.wp2sv-center{
+  display: block !important;
+  margin: 0 auto !important;
+  text-align: center !important;
+}
+.wp2sv-text-center{
+  text-align: center;
+}
+.spacer{
+  margin-top:16px;
+}
+.wp2sv-h1{
+  font-size: 17px;
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: #23282d
+}
+.wp2sv-h2{
+  color:#000;
+  font-size: 17px;
+}
+.wp2sv-text{
+  margin-bottom: 12px;
+  margin-top: 5px;
+}
+.wp2sv-p{
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.wp2sv-bb{
+  color:#000;
+  font-weight: bold;
+}
+.wp2sv-bd{
+  border: 1px dotted #ccc;
+}
+.wp2sv-clickable{
+  cursor: pointer;
+}
+.wp2sv-back{
+  color: #4285f4;
+  text-decoration: none;
+  .dashicons{
+    vertical-align: baseline;
+  }
+}
+.wp2sv-action{
+  color: #4285f4;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 500;
+  min-width: 24px;
+  margin: 8px;
+  outline: none;
+  overflow: hidden;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  &:focus{
+    box-shadow: none;
+  }
+  &:not([style*='display: none'])~.wp2sv-action {
+    margin-left: 8px;
+  }
+  &.wp2sva-black{
+    color:#444;
+  }
+  &:first-child{
+    margin-left: 0;
+  }
+}
+.wp2sv-btn{
+  color: #555;
+  border-color: #ccc;
+  background: #f7f7f7;
+  -webkit-box-shadow: 0 1px 0 #ccc;
+  box-shadow: 0 1px 0 #ccc;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 13px;
+  line-height: 26px;
+  height: 28px;
+  margin: 0;
+  padding: 0 10px 1px;
+  cursor: pointer;
+  border-width: 1px;
+  border-style: solid;
+  -webkit-appearance: none;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  white-space: nowrap;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  &:active{
+    background: #eee;
+    border-color: #999;
+    -webkit-box-shadow: inset 0 2px 5px -3px rgba(0,0,0,.5);
+    box-shadow: inset 0 2px 5px -3px rgba(0,0,0,.5);
+    -webkit-transform: translateY(1px);
+    -ms-transform: translateY(1px);
+    transform: translateY(1px);
+    outline:0;
+  }
+  &:focus{
+    outline:0;
+  }
+  .dashicons{
+    line-height: 26px;
+  }
+}
+.wp2sv-btn-primary{
+  background: #4285f4;
+  color: #ffffff;
+  border: 1px #3079ED solid;
+  box-shadow: inset 0 1px 0 #80B0FB;
+  text-transform: uppercase;
+  &:active{
+    background: #3079ED;
+  }
+
+}
+.wp2sv-text-primary{
+  color: #4285f4;
+}
+.wp2sv-btn-disabled,[disabled]{
+  color: #555;
+  border-color: #ccc;
+  background: #f7f7f7;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  cursor: not-allowed;
+}
+.wp2sv-error{
+  color:#dc3545;
+  input {
+    border-color: #dc3545;
+  }
+}
+
+.wp2sv-loading{
+  text-align: center;
+  margin: auto;
+  .wp2svi-loading{
+    @green: #008744;
+    @blue: #0057e7;
+    @red: #d62d20;
+    @yellow: #ffa700;
+    @white: #eee;
+    // scaling... any units
+    @width: 25px;
+    position: relative;
+    margin: 0 auto;
+    width: @width;
+    &.wp2svi-2x{
+      width:2*@width;
+    }
+    &.wp2svi-3x{
+      width:3*@width;
+    }
+    &.wp2svi-4x{
+      width:4*@width;
+    }
+
+    &:before {
+      content: '';
+      display: block;
+      padding-top: 100%;
+    }
+
+    .icircular {
+      animation: rotate 2s linear infinite;
+      height: 100%;
+      transform-origin: center center;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+
+    .ipath {
+      stroke-dasharray: 1, 200;
+      stroke-dashoffset: 0;
+      animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
+      stroke-linecap: round;
+    }
+
+    @keyframes rotate {
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    @keyframes dash {
+      0% {
+        stroke-dasharray: 1, 200;
+        stroke-dashoffset: 0;
+      }
+      50% {
+        stroke-dasharray: 89, 200;
+        stroke-dashoffset: -35px;
+      }
+      100% {
+        stroke-dasharray: 89, 200;
+        stroke-dashoffset: -124px;
+      }
+    }
+
+    @keyframes color {
+      100%,
+      0% {
+        stroke: @red;
+      }
+      40% {
+        stroke: @blue;
+      }
+      66% {
+        stroke: @green;
+      }
+      80%,
+      90% {
+        stroke: @yellow;
+      }
+    }
+  }
+}

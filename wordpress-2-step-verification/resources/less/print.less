@@ -1,0 +1,90 @@
+@media print {
+
+  html, body {
+    height:100%;
+    overflow: hidden;
+    background: #FFF;
+    font-size: 9.5pt;
+  }
+  .hide-if-print{
+    display: none;
+  }
+  body {
+    overflow-y: hidden;
+    * {
+      visibility: hidden;
+    }
+    .wp2sv{
+      .show-if-print{
+        display: block;
+      }
+      li.show-if-print{
+        display: list-item;
+      }
+      .wp2sv-container{
+        height:1px;
+      }
+      .wp2sv-modal-mask{
+        display: block;
+      }
+      .wp2sv-modal-close{
+        display: none;
+      }
+      #wp2sv-backup-codes-modal{
+        .wp2sv-modal-content{
+          padding: 1mm;
+        }
+        * {
+          visibility: visible;
+        }
+        .card-body {
+          width: 90mm;
+        }
+        .card-footer,.wp2sv-get-new-codes{
+          display: none;
+        }
+        .backup-codes{
+          border: dashed 1px #ccc;
+          padding: 16px 0;
+          .backup-info{
+            text-align: center;
+            font-size: 13px;
+            img{
+              border: none;
+              width: 48px;
+              height: auto;
+            }
+          }
+          .backup-note{
+            margin: auto;
+            font-size: 13px;
+            width: 50%;
+            width: fit-content;
+            max-width: 70mm;
+            list-style: square;
+          }
+          .backup-codes-list{
+            span.cb{
+              border: 1px solid;
+              display: inline-block;
+              height: 14px;
+              margin-right: 2px;
+              width: 14px;
+            }
+            tr{
+              td:first-child{
+                padding-right: 20px;
+              }
+            }
+            margin:auto;
+            display: inline-block;
+            font-size:14pt;
+            padding:0 20px 16px 20px
+          }
+        }
+      }
+    }
+  }
+
+
+}

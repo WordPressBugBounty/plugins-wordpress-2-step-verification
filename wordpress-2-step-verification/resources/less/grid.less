@@ -1,0 +1,41 @@
+.wp2sv-row{
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-flex: 1;
+  box-flex: 1;
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  .pull-right {
+    display: inline-block;
+    margin-left: auto;
+  }
+  .pull-left {
+    display: inline-block;
+    margin-right:auto;
+  }
+}
+.wp2sv-col-0{
+  -webkit-box-flex: 0;
+  box-flex: 0;
+  -webkit-flex-grow: 0;
+  flex-grow: 0;
+  -webkit-flex-shrink: 0;
+  flex-shrink: 0;
+}
+.wp2sv-col{
+  -webkit-box-flex: 1;
+  box-flex: 1;
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  +.wp2sv-col{
+    .wp2sv-col-0;
+  }
+}
+
