@@ -39,7 +39,7 @@ function wp2sv_get_time_ntp($server = '0.pool.ntp.org', $port = 123, $timeout = 
             return $time;
         }
     }
-    $time_stamp = wp_remote_get('http://www.timeanddate.com/scripts/ts.php');
+    $time_stamp = wp_remote_get('https://www.timeanddate.com/scripts/ts.php');
 
     if (!is_object($time_stamp)) {
         $time_stamp = $time_stamp['body'];

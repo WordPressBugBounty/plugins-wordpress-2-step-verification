@@ -62,6 +62,9 @@ Please check if wp cron disabled then please enable it. You also can manually ru
 6. Recovery
 
 == Changelog ==
+= 2.6.4 =
+* Remove unused qrcode url
+* Use https for time sync
 = 2.6.2 =
 * Fix QR code not showing
 

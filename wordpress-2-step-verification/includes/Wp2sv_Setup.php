@@ -122,9 +122,9 @@ class Wp2sv_Setup extends Wp2sv_Base {
     }
     function getQrCodeUrl($data, $size=144){
         $data=urlencode($data);
-        $qr_url=sprintf('https://api.qrserver.com/v1/create-qr-code/?size=%1$sx%1$s&data=%2$s',$size,$data);
-        //$qr_url2=sprintf("https://quickchart.io/qr?size=%s&text=%s",$size,$data);
-        return $qr_url;
+        //$qr_url=sprintf('https://api.qrserver.com/v1/create-qr-code/?size=%1$sx%1$s&data=%2$s',$size,$data);
+
+        //return $qr_url;
     }
 
     /**
