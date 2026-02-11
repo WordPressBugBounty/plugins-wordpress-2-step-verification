@@ -1,11 +1,11 @@
-﻿=== Wordpress 2-step verification ===
+﻿=== WP 2-step verification ===
 Author: as247
 Contributors: as247
 Donate link: https://paypal.me/alt9270
 Tags: two-factor authentication, two-factor, authentication, 2fa, two-step verification
 Requires at least: 4.5
 Requires PHP: 7.3
-Tested up to: 6.6.2
+Tested up to: 6.8.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
